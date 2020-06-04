@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigation"
+    app:startDestination="@id/layout1">
+    <fragment
+        android:id="@+id/layout1"
+        android:name="vn.edu.ntu.vancuong.my_fragmentdemo.layout1"
+        android:label="layout1"
+        tools:layout="@layout/layout1" >
+        <action
+            android:id="@+id/action_layout1_to_layout2"
+            app:destination="@id/layout2" />
+    </fragment>
+    <fragment
+        android:id="@+id/layout2"
+        android:name="vn.edu.ntu.vancuong.my_fragmentdemo.layout2"
+        android:label="fragment_layout2"
+        tools:layout="@layout/layout2" >
+        <action
+            android:id="@+id/action_layout2_to_layout1"
+            app:destination="@id/layout1" />
+    </fragment>
+</navigation>
